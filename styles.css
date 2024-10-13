@@ -162,6 +162,7 @@
     grid-area: pseudo;
     font-size: large;
     font-weight: 700;
+    min-width: 200px;
 }
 
 .buttons_container {
@@ -257,6 +258,7 @@
 
 .sidebar_nav_list>*,
 .sidebar_setting_list>* {
+    display: flex;
     padding: 3px 0;
 
 }
@@ -290,24 +292,31 @@ header {
     padding: 2rem 0 0.5rem 1rem;
 }
 
-.annoncements_title,
+.annoncements_title {
+    font-size: larger;
+    padding: 2rem 0 0.5rem 0rem;
+}
+
 .trending_title {
     font-size: larger;
-    padding: 2rem 0 1rem 0rem;
+    padding: 1rem 0 0.5rem 0rem;
 }
 
 .projectCards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 250px));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 350px));
     gap: 1rem;
+    padding-bottom: 1rem;
 }
 
 .projectCards>* {
     background-color: white;
-    padding: 2rem;
+    padding: 1rem;
+    padding-top: 2rem;
     margin-left: 1rem;
     border-radius: 10px;
     border-left: 0.5rem orange solid;
+    display: grid;
 }
 
 .card_title {
@@ -316,14 +325,13 @@ header {
 
 .card_description {
     font-size: smaller;
+    height: 6rem;
 }
 
 .icons_container {
     display: flex;
     justify-content: end;
     gap: 1rem;
-    margin-top: 2rem;
-
 }
 
 .icons_container>*>* {
@@ -340,15 +348,12 @@ header {
 
 .annoncement_cards {
     display: grid;
-    grid-template-rows: repeat(3, 5rem);
-    padding: 2rem;
-    gap: 2rem;
+    padding: 1rem 2rem;
     background-color: white;
     border-radius: 10px;
 }
 
 .annoncement_article {
-    padding-bottom: 6rem;
     border-bottom: 1px solid lightgray;
 
 }
@@ -358,11 +363,14 @@ header {
 }
 
 .annoncement_title {
-    font-size: medium;
+    font-size: small;
+    padding-top: 1rem;
+    padding-bottom: 0;
 }
 
 .annoncement_description {
-    font-size: smaller;
+    font-size: x-small;
+    padding-bottom: 1rem;
 }
 
 .trending_container {
@@ -377,19 +385,26 @@ header {
     grid-template-rows: repeat(4, 4rem);
     background-color: white;
     border-radius: 10px;
-
 }
 
 .trending_accounts {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
     justify-content: space-evenly;
-    padding: 0 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .account_avatar {
     height: 2rem;
     width: 2rem;
     border-radius: 50%;
+}
+
+.account_name {
+    font-size: smaller;
+}
+
+.person_name {
+    font-size: smaller;
 }
